@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 字节大作业说明文档
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### 1、项目环境
 
-## Available Scripts
+* node环境
+* npm
 
-In the project directory, you can run:
+#### 2、运行指令
 
-### `npm start`
+1. 安装所需依赖
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   ```javascript
+   npm install
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. 本地启动开发环境
 
-### `npm test`
+   ```javascript
+   npm run dev
+   
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 3、设计说明
 
-### `npm run build`
+​	采用react+electron完成本次作业，我只写了一些业务逻辑部分，markdown语法转换部分在githup上找的[react-simplemde-editor](https://github.com/RIP21/react-simplemde-editor "github地址")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+集成到项目中，我只做了一些基本的配置。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### 4、项目的不足
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* 数据持久化。可以接入node完成数据持久化
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* 协同编辑。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### 5、总结
 
-## Learn More
+##### 遇到的问题：
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*  react运行在浏览器，而我要接入node模块，引用node模块为空对象，如：require（‘fs）时打印为空对象
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* react的中的抽象组件的封装
 
-### Code Splitting
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##### 收获：
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* 项目采用的react,封装了一些函数组件，加深了对react-hooks和函数组件的理解
+* 项目中遇到了问题会在一些论坛或者咨询前辈找解决方案，提高独自思考和解决问题的能力
+* 熟悉了electron框架的使用和开发
